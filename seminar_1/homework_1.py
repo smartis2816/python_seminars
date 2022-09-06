@@ -69,7 +69,7 @@
 
 # def input_and_validation ():
 #     num = int(input('Введите номер четверти от 1 до 4: '))
-#     while num == 0 or num > 4 or num < 1:
+#     while num > 4 or num < 1:
 #         num = int(input('Неверный ввод. Номер четверти должен быть от 1 до 4. Введите ещё раз: '))
 #     return num
 
