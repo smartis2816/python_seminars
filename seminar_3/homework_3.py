@@ -102,28 +102,28 @@
 # Пример:
 # для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
-def get_fibonacci(k):
-    if k >= 1:
-        f1 = 1
-        f2 = 1
-        new_list_1 = [1, 1]
-        for i in range(2, k):
-            f1, f2 = f2, (f1 + f2)
-            new_list_1.append(f2)
+# def get_fibonacci(k):
+#     if k >= 1:
+#         f1 = 1
+#         f2 = 1
+#         new_list_1 = [1, 1]
+#         for i in range(2, k):
+#             f1, f2 = f2, (f1 + f2)
+#             new_list_1.append(f2)
     
-        new_list_2 = new_list_1.copy()
-        for i in range(1, len(new_list_2), 2):
-            new_list_2[i] *= (-1)
-        new_list_2.reverse()
-        new_list_2.append(0)
-        res = new_list_2 + new_list_1
-        print(res)
-    elif k == 0:
-        res = [0]
-        print(res)
+#         new_list_2 = new_list_1.copy()
+#         for i in range(1, len(new_list_2), 2):
+#             new_list_2[i] *= (-1)
+#         new_list_2.reverse()
+#         new_list_2.append(0)
+#         res = new_list_2 + new_list_1
+#         print(res)
+#     elif k == 0:
+#         res = [0]
+#         print(res)
 
-k = int(input('Введите натуральное число: '))
-get_fibonacci(k)
+# k = int(input('Введите натуральное число: '))
+# get_fibonacci(k)
 
 
 
